@@ -113,68 +113,84 @@
 				<table>
 					<tbody>
 						<tr>
-							<td>1</td>
 							<td class="HB-tdd">收款方 : </td>
-							<td class="HB-td HB-TD"><input type="text" class="hb-td" placeholder="选择/输入银行" id="HB-T">
+							<td class="HB-td HB-TD"><input type="text" class="hb-td" placeholder="选择/输入银行" id="HB-T"  list="datalist">
+								<datalist id="datalist">
+									<option value="中国工商银行"></option>
+									<option value="中国农业银行"></option>
+									<option value="中国建设银行"></option>
+									<option value="中国情浓银行"></option>
+									<option value="中国陕西银行"></option>
+									<option value="中国山东银行"></option>
+								</datalist>
 								<div class="HB-dingwei" id="xianshi">
-									<button id="xiaoshi">点击消失</button>
+									<span>中国工商银行</span>
+									<span>中国农业银行</span>
+									<span>中国建设银行</span>
+									<span>中国情浓银行</span>
+									<span>中国陕西银行</span>
+									<span>中国山东银行</span>
+									<span>中国上海银行</span>
+									<span>中国北京银行</span>
+									<span>中国利群银行</span>
+									<span>中国金卡银行</span>
+									<span>中国兰州银行</span>
+									<span>中国福建银行</span>
 								</div>
 							</td>
 							<td><a href="" class="HB-a">已存银行卡</a><em></em></td>
 						</tr>
 						<tr>
-							<td>2</td>
 							<td class="HB-tdd"></td>
-							<td class="HB-td"><input type="text" class="hb-td" placeholder="储蓄卡号"></td>
-							<td></td>
+							<td class="HB-td"><input type="text" class="hb-td" placeholder="储蓄卡号" id="HB-N">
+								<div id="kahao"></div>
+							</td>
+							<td id = "HB-Nn" style = "color:red;"></td>
 						</tr>
 						<tr>
-							<td></td>
 							<td class="HB-tdd"></td>
 							<td class="HB-td"><input type="text" class="hb-td" placeholder="开户人姓名"></td>
 							<td></td>
 						</tr>
 						<tr>
-							<td>3</td>
 							<td class="HB-tdd">付款金额 : </td>
-							<td class="HB-td"><input type="text" class="hb-td"></td>
-							<td></td>
+							<td class="HB-td"><input type="text" class="hb-td" id="HB-m"  onkeypress="return event.keyCode>=48&&event.keyCode<=57" ng-pattern="/[^a-zA-Z]/"></td>
+							<td id="HB-l" style = "color:red;"></td>
 						</tr>
-						
 						<tr>
 							<td></td>
+							<td colspan="2">您还可以免费转账<span id = "HB-R">50000</span>元，超出部分收取0.1手续费，最低0.1元</td>
+						</tr>
+						<tr>
 							<td class="HB-tdd">到账时间 : </td>
 							<td class="HB-td"><input type="radio" name="guobo">2小时内到账</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td></td>
 							<td class="HB-tdd"></td>
 							<td class="HB-td"><input type="radio" name="guobo">次日24点钱到账</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td>4</td>
 							<td class="HB-tdd">服务费 : </td>
-							<td class="HB-td">50:00元 (付款总额50050.0元)</td>
+							<td class="HB-td"><span id="HB-S">0</span>元 (付款总额<span id="HB-U">0</span>元)</td>
 							<td></td>
 						</tr>
 						<tr>
-							<td></td>
 							<td class="HB-tdd">付款说明 : </td>
 							<td class="HB-td"><input type="text" class="hb-td" placeholder="可选(20字以内)"></td>
 							<td></td>
 						</tr>
 						<tr>
-							<td></td>
 							<td class="HB-tdd"></td>
 							<td class="HB-td"><input type="radio">付款原因以短信的方式通知收款方(免费)</td>
 							<td></td>
 						</tr>
 					</tbody>
 				</table>
-				<button>下一步</button>
-
+				<div class="Next">
+					<button id = "next">下一步</button>
+				</div>
 			</div>
 		</div>
 	</div>

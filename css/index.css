@@ -258,8 +258,9 @@ header:after{
 }
 /*...............................................*/
 td{
-	width: 80px;
+	width: 180px;
 	height: 32px;
+	position: relative;
 }
 .HB-tdd{
 	text-align: right;
@@ -277,8 +278,8 @@ td .hb-td{
 }
 table{
 	padding-top: 30px;
-	font-size: 14px;
-	padding-left: 60px;
+	font-size: 12px;
+	padding-left: 20px;
 }
 table .HB-a{color: #444;}
 button{
@@ -287,19 +288,34 @@ button{
 	background-color: #333;
 	color: #fff;
 	outline: none;
+	border: 1px solid #ddd;
+	margin: 0 auto;
 }
 .HB-TD{
 	position: relative;
 }
-#HB-TD .HB-dingwei{
-	width: 550px;
-	height: 450px;
-	border: 2px solid #333;
-	background-color: #ddd;
+.HB-dingwei{
+	width: 504px;
+	/*height: 150px;*/
+	border: 1px solid #999;
+	background-color: #f9f9f9;
 	position:absolute;
-	/*transition:all .2s;*/
 	display: none;
+	overflow: hidden;
+	z-index: 66;
 }
-#HB-TD .xianshi{
-	display: block;
+#xianshi span{
+	display:block;
+	width: 126px;
+	height: 43px;
+	background-image: url(../img/5.jpg);
+	background-repeat: no-repeat;
+	font-size: 0;
+	cursor: pointer;
+	float: left;
+}
+#kahao{
+	width:239px;height:0px;background-color:#eee;position: absolute;
+	z-index: 1;font-size: 18px;line-height: 35px;padding-left: 5px;
+	overflow: hidden;
 }
