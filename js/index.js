@@ -53,3 +53,7 @@ HBM.onkeyup = function(){
 	HBU.innerHTML = Number(HBM.value) + Number(HBS.innerHTML);
 	HBR.innerHTML = 50000 - Number(HBM.value)
 }
+var Qi = document.getElementById("Qi")
+Qi.onclick = function(){
+	HBdingwei.style.display = "none"
+}
